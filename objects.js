@@ -30,5 +30,27 @@ console.log('Price:', shoe.price);
 let userKey = prompt('Type in a key:');
 console.log('Using userKey:', shoe[userKey]); // looks for a key whatever the prompt is
 console.log('Using userKey:', shoe.userKey); // looks for a key called "userKey"
+
 // Bracket notiation is used for VARIABLES
 // Otherwise, dot notation is great
+
+// Example of adding, updating, removing object properties
+const car = {
+  color: 'blue',
+  brand: 'honda',
+  trim: 'sport',
+};
+car.weight = '1577kg'; // adding new property of weight
+car['color'] = 'red'; // updating color from blue to red
+delete car['trim']; // delete trim
+
+car.make = 'Mercedes';
+car.model = 'C63AMG';
+car.price = '40K';
+console.log(car);
+
+car.price = '25K';
+console.log(car);
+
+car.price += 10000;
+console.log(car);
