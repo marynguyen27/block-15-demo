@@ -54,3 +54,39 @@ console.log(car);
 
 car.price += 10000;
 console.log(car);
+
+// For.. in loops for objects
+
+for (const key in shoe) {
+  console.log('key', key); // property
+  console.log('value:', shoe[key]); // value -- note, DO NOT USE DOT NOTATION
+  console.log('');
+}
+
+// How do I know if a property is IN an object?
+// 1. Loop through keys until I either find the property or it's not there
+// 2.
+
+let obj = {
+  // you don't know what keys are here
+};
+
+// For example, is the property price in there?
+// Check for price. if it has one, console log the price, otherwise set price to zero
+if (obj.price == undefined) {
+  console.log(obj.price);
+} else {
+  obj.price = 0.0;
+}
+
+// Object.hasOwn() returns boolean if it's in the object or not
+if (obj.hasOwn(obj, 'price')) {
+}
+// if price exists, it will return TRUE
+
+// IN keyword can also check if something is in object or not
+if ('name' in obj) {
+  console.log('In object');
+} else {
+  console.log('Not in obj');
+}
