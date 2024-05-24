@@ -41,3 +41,8 @@ function stringCounter(inputStr) {
 }
 
 console.log('Answer:', stringCounter(inputStr));
+
+/* EXTRA STRING STUFF */
+let myStr = 'Mary';
+console.log(myStr[2]);
+// output should return the letter r (in position 2)
